@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.6
+    - pip
     - setuptools
     - wheel
   run:
-    - apache-airflow >=2.0.0
-    - cx_oracle >=5.1.2
     - python >=3.6
+    - apache-airflow >=2.1.0
+    - cx_oracle >=5.1.2
 
 test:
   imports:
