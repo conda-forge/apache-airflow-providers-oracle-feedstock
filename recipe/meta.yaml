@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-oracle" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: 7acaabe6111faafe5a4b410c8cc323110a267c38cb1ae91a0927888d1c3700e3
+  sha256: 26304272d2d9dabea79467eecade101a2b6ad45c7d252b2890daffb6638cbc7f
 
 build:
   number: 0
@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.6
+    - pip
     - setuptools
     - wheel
   run:
-    - apache-airflow >=2.0.0
-    - cx_oracle >=5.1.2
     - python >=3.6
+    - apache-airflow >=2.1.0
+    - cx_oracle >=5.1.2
 
 test:
   imports:
