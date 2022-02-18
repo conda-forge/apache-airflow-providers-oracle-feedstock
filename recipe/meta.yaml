@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-oracle" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: 22ceeac11fcdebecd71147ad525ab7b7adff87665d7098210ff66e7e6aedc0ef
+  sha256: 21675e37cedb7e756f70f4f87d430018ee44f8b38de340f0be7537384430e717
 
 build:
   number: 0
