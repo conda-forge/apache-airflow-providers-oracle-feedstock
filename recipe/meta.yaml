@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.7
     - apache-airflow >=2.2.0
-    - cx_oracle >=5.1.2
+    - apache-airflow-providers-common-sql
+    - oracledb >=1.0.0
 
 test:
   imports:
