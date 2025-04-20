@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-oracle" %}
-{% set version = "4.0.2" %}
+{% set version = "4.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_oracle-{{ version }}.tar.gz
-  sha256: 7f0d69210a81f9fda9ede187ae7e55e4ded428aaa9e9b9aa9025e095a2f745bb
+  sha256: f0da0e6751124262160fa2803c1e8f1e11c973b9dab48fc7f9cd82cc8472ee8f
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.11.0
+    - flit-core ==3.12.0
     - pip
   run:
     - python >={{ python_min }}
