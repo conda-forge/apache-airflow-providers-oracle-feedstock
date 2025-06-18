@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-oracle" %}
-{% set version = "4.1.0" %}
+{% set version = "4.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_oracle-{{ version }}.tar.gz
-  sha256: 5d8b1a97106d53316675d0d7a55ee8ba995f72c0e507cadf55595ae6fe2b997f
+  sha256: a26a79a8b7080fe2736a7ea2bb596e4720128a12467be27c04d2cfa9471f3db6
 
 build:
   noarch: python
