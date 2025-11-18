@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-oracle" %}
-{% set version = "4.2.0" %}
-{% set python_min = "3.10" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_oracle-{{ version }}.tar.gz
-  sha256: 4c7b87bd2287a5d5af3f31ad635a6fcdfe240ff0c448a3edad9e2df5482c6659
+  sha256: 621b4dcfff5488d5b0c474d22f0fa18db1f210aaae9d6cb3cb732c0f16aa5f8c
 
 build:
   noarch: python
@@ -23,6 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - apache-airflow-providers-common-sql >=1.20.0
     - oracledb >=2.0.0
 
@@ -39,7 +39,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-oracle for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/oracle/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-oracle/stable/index.html
   dev_url: https://github.com/apache/airflow/
