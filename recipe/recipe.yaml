@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-oracle
-  version: 4.5.0
+  version: "4.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -26,6 +26,7 @@ requirements:
     - apache-airflow-providers-common-compat >=1.8.0
     - apache-airflow-providers-common-sql >=1.32.0
     - oracledb >=2.0.0
+
 tests:
   - python:
       imports:
