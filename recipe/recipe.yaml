@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-oracle
-  version: "4.6.1"
+  version: 4.6.2
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_oracle-${{ version }}.tar.gz
-  sha256: 4f76117b41e963797d3434816a8e0cfc21a6f7c64802c8bbe61f0da82dee8130
+  sha256: c2ef0919be8f1dc8636da6131a6fa3654e65e4924749341ba6bda6cbcb83eb1a
 
 build:
   noarch: python
@@ -25,8 +25,7 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - apache-airflow-providers-common-sql >=1.32.0
-    - oracledb >=2.0.0
-
+    - oracledb >=2.3.0
 tests:
   - python:
       imports:
@@ -34,7 +33,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   homepage: https://github.com/apache/airflow/
